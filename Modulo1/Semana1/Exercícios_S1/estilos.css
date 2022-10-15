@@ -1,0 +1,155 @@
+h1.S1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    color: rgb(255, 53, 228);
+    text-align: center;
+    background-image: url(vaporbackground.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: 80px;
+    padding: 10px;
+}
+
+body {
+    margin: 0 0 0 0;
+    background-color: rgb(45, 19, 94);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+div.bodinho {
+    display: flex;
+    justify-content: center;
+}
+
+div.bodinho>p {
+    font-size: 14px;
+    font-family: Arial;
+    color: white;
+    font-weight: bold;
+}
+
+a>img {
+    border-radius: 25%;
+    border: solid;
+    padding: 10px;
+    border-color: aqua;
+    margin-top: 20px;
+}
+
+a>img:hover {
+    background-color: rgb(255, 53, 228);
+    animation-duration: 0.3s;
+    animation-name: fadein;
+}
+
+div.image {
+    display: flex;
+    flex: 1;
+    height: 100vh;
+}
+
+div>img.image1 {
+    width: 33%;
+    padding: 5px;
+    margin-top: 70px;
+}
+
+div.dvideo {
+    margin: 0% 5% 0% 5%;
+    background-color: rgb(255, 53, 228);
+    display: flex;
+    justify-content: center;
+}
+
+div.ytitulo {
+    text-align: center;
+    background-color: aqua;
+    margin: 0% 5% 0% 5%;
+}
+
+
+header>img {
+    margin: 10px;
+}
+
+h3 {
+    margin-bottom: 0%;
+}
+
+a.nave:hover {
+    background-color: rgb(255, 53, 228);
+    animation-duration: 0.3s;
+    animation-name: fadein;
+}
+
+header.menuteto {
+    top: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.navegador {
+    display: flex;
+    gap: 30px;
+    margin-top: 0px;
+    margin-right: 40px;
+}
+
+nav>a {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    color: aqua;
+    padding: 18px;
+    text-decoration: none;
+}
+
+header.nave {
+    padding: 10px;
+}
+
+@keyframes fadein {
+    to {
+        background-color:rgb(255, 53, 228);
+    }
+
+    from {
+        background-color: aqua;
+    }
+}
+
+@keyframes fadein2 {
+    from {
+        opacity: 0.6;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+footer.futera {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-top: 10px;
+    background-color: black;
+    background-position: bottom;
+    background-repeat: repeat;
+    color: white;
+    text-align: center;
+}
+
+footer.futera:hover {
+    background-image: url(vaporbackground.jpg);
+    animation-duration: 1s;
+    animation-name: fadein2;
+    color: rgb(255, 53, 228);
+}

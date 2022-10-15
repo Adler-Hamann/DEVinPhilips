@@ -1,0 +1,15 @@
+span.destaque{
+    font-style: italic;
+    background-color: aqua;
+}
+
+#caixa {
+    width: 200px;
+    height: 200px;
+    padding: 50px 50px 50px 50px;
+    text-align: center;
+    display: block;
+    border: 20px solid black;
+    margin: 50px;
+    background-color: salmon;
+}
