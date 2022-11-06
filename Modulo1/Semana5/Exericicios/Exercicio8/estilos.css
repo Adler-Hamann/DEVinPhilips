@@ -1,0 +1,64 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(vaporbackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#caixa {
+    height: 80%;
+    width: 80%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+    border: solid 2px rgb(255, 24, 224);
+}
+
+form {
+    display:flex;
+    flex-direction: column;
+    align-items: justify;
+    justify-content: center;
+    height: 50rem;    
+}
+
+label {
+    font-size: 2rem;
+    font-family: monospace;
+    color:rgb(12, 3, 133);
+}
+
+input {
+    height: 2rem;
+    font-size: 1.4rem;
+    background-color: rgb(255, 255, 255);
+    border: solid 2px rgb(12, 3, 133);
+    color:rgb(12, 3, 133);
+}
+
+#acessar {
+    border: none;
+    background-color: rgb(12, 3, 133);
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2.5rem;
+    margin-top: 1.5rem;
+    font-weight: bold;
+    width: 20rem;
+    height: 3rem;
+}
+
+#acessar:hover{
+    background-color: rgb(255, 24, 224);
+}
+
+input:focus{
+    background-color: rgb(12, 3, 133);
+    color:white;
+}
