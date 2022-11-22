@@ -1,0 +1,12 @@
+li {
+    list-style-type: none;
+    display: flex;
+    margin-bottom: 20px;
+    background-color: rgb(255, 195, 127);
+
+}
+
+p {
+    font-size: 20px;
+    margin-left: 20px;
+}
