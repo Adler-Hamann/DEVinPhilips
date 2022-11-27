@@ -1,18 +1,8 @@
 <ul class="list-group">
-    <li class="list-group-item">
-        <h3>{{ notificacoes[1].titulo }}</h3>
-        <p>{{ notificacoes[1].subtitulo}}</p>
-        <p>{{ notificacoes[1].data}}</p>
-    </li>
-    <li class="list-group-item">
-        <h3>{{ notificacoes[0].titulo }}</h3>
-        <p>{{ notificacoes[0].subtitulo}}</p>
-        <p>{{ notificacoes[0].data}}</p>
-    </li>
-    <li class="list-group-item">
-        <h3>{{ notificacoes[2].titulo }}</h3>
-        <p>{{ notificacoes[2].subtitulo}}</p>
-        <p>{{ notificacoes[2].data}}</p>
+    <li *ngFor="let notificacao of notificacoes" class="list-group-item">
+        <h3>{{ notificacao.titulo }}</h3>
+        <p>{{ notificacao.subtitulo }}</p>
+        <p>{{ notificacao.data }}</p>
     </li>
 </ul>
 
