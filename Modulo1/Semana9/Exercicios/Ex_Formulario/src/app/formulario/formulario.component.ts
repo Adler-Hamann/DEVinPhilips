@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./formulario.component.css']
 })
 export class FormularioComponent {
-
+    enviar(event: any) {
+      event.preventDefault()
+    }
 }
