@@ -6,6 +6,8 @@ import { FormularioComponent } from './formulario/formulario.component';
 import { ModalComponent } from './modal/modal.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { CardsComponent } from './cards/cards.component';
+import { FormularioInjecaoComponent } from './formulario-injecao/formulario-injecao.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -13,10 +15,12 @@ import { CardsComponent } from './cards/cards.component';
     FormularioComponent,
     ModalComponent,
     NavbarComponent,
-    CardsComponent
+    CardsComponent,
+    FormularioInjecaoComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
