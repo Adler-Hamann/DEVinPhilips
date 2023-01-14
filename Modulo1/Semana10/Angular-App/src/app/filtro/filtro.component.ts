@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'ntap-filtro',
@@ -6,6 +6,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./filtro.component.scss']
 })
 export class FiltroComponent {
-  
+  botoes: any = [{
+    titulo: 'Todos'
+  },
+  {
+    titulo: 'Não Lidos'
+  },
+  {
+    titulo: 'Lidos'
+  }
+]
+  @Output() actionOutput:EventEmitter<string> = new EventEmitter();
+
+  executarFuncao() {
+    this.actionOutput.emit()
+  }
 
 }
