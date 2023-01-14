@@ -1,3 +1,1 @@
-<button type="button" class="btn btn-outline-secondary">Todos</button>
-<button type="button" class="btn btn-outline-secondary">Não lidos</button>
-<button type="button" class="btn btn-outline-secondary">Lidos</button>
+<button (click)='executarFuncao()' type="button" *ngFor="let botao of botoes" class="btn btn-outline-secondary">{{botao.titulo}}</button>
