@@ -1,0 +1,11 @@
+<ul class="list-group">
+    <li *ngFor="let notificacao of notificacoes" class="list-group-item">
+        <h3>{{ notificacao.titulo }}</h3>
+        <p>{{ notificacao.subtitulo }}</p>
+        <p>{{ notificacao.data }}</p>
+        <button (click)= "notificacao.lido ? notificacao.lido = false : notificacao.lido = true"
+        [ngClass]="notificacao.lido ? 'btn btn-outline-danger': 'btn btn-danger'"
+        type="button" >{{ notificacao.lido ? "Lido" : "Não lido" }}</button>
+    </li>
+</ul>
+
