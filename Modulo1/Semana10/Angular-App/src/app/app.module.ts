@@ -6,6 +6,8 @@ import { NotificationListComponent } from './notification-list/notification-list
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { FiltroComponent } from './filtro/filtro.component';
+import { HomeComponent } from './pages/home/home.component';
+import { AboutComponent } from './pages/about/about.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +15,9 @@ import { FiltroComponent } from './filtro/filtro.component';
     NotificationListComponent,
     HeaderComponent,
     FooterComponent,
-    FiltroComponent
+    FiltroComponent,
+    HomeComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule
