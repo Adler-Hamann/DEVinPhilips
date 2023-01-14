@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -11,5 +11,10 @@ export class AppComponent {
     imagem: '../../assets/wendel-1-1.jpg',
     nome: 'Wendel Bezerra',
     descricao: 'Um dos maiores dubladores do Brasil, Wendel Bezerra dublou um dos mais marcantes personagen de anime: O Goku!'
+  }
+
+  action(event: any) {
+    
+    console.log(event)
   }
 }

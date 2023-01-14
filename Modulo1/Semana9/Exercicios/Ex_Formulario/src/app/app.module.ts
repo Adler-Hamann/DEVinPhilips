@@ -8,6 +8,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { CardsComponent } from './cards/cards.component';
 import { FormularioInjecaoComponent } from './formulario-injecao/formulario-injecao.component';
 import { FormsModule } from '@angular/forms';
+import { PesquisaComponent } from './pesquisa/pesquisa.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FormsModule } from '@angular/forms';
     ModalComponent,
     NavbarComponent,
     CardsComponent,
-    FormularioInjecaoComponent
+    FormularioInjecaoComponent,
+    PesquisaComponent
   ],
   imports: [
     BrowserModule,
