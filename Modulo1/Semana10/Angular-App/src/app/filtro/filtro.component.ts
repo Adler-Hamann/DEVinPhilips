@@ -1,19 +1,22 @@
-import { Component, Output, EventEmitter } from '@angular/core';
+import { Component, Output, EventEmitter, OnInit } from '@angular/core';
 
 @Component({
   selector: 'ntap-filtro',
   templateUrl: './filtro.component.html',
   styleUrls: ['./filtro.component.scss']
 })
-export class FiltroComponent {
+export class FiltroComponent implements OnInit {
   botoes: any = [{
-    titulo: 'Todos'
+    titulo: 'Todos',
+    route: '/home/Todos'
   },
   {
-    titulo: 'Não Lidos'
+    titulo: 'Não Lidos',
+    route: '/home/NaoLidos'
   },
   {
-    titulo: 'Lidos'
+    titulo: 'Lidos',
+    route: '/home/Lidos'
   }
 ]
   @Output() actionOutput:EventEmitter<string> = new EventEmitter();
@@ -22,4 +25,7 @@ export class FiltroComponent {
     this.actionOutput.emit()
   }
 
+  ngOnInit(): void {
+    
+  }
 }
