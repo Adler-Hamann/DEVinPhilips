@@ -6,23 +6,16 @@ import { Component, Output, EventEmitter, OnInit } from '@angular/core';
   styleUrls: ['./filtro.component.scss']
 })
 export class FiltroComponent implements OnInit {
-  botoes: any = [{
-    titulo: 'Todos',
-    route: '/home/Todos'
-  },
-  {
-    titulo: 'Não Lidos',
-    route: '/home/NaoLidos'
-  },
-  {
-    titulo: 'Lidos',
-    route: '/home/Lidos'
-  }
+  botoes: any = [
+    'Todos',
+   'Não Lidos',
+   'Lidos'
 ]
+
   @Output() actionOutput:EventEmitter<string> = new EventEmitter();
 
-  executarFuncao() {
-    this.actionOutput.emit()
+  executarFuncao(titulo: string) {
+    this.actionOutput.emit(titulo)
   }
 
   ngOnInit(): void {
