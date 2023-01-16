@@ -6,9 +6,9 @@ import { HomeComponent } from './pages/home/home.component';
 const routes:Routes = [
   {path:'', redirectTo: 'home', pathMatch: 'full'},  
   {path:'home',component:HomeComponent},
-  {path:'home/lidos',component:HomeComponent},
-  {path:'home/nao-lidos',component:HomeComponent},
-  {path:'home/todos',component:HomeComponent},
+  {path:'home/Lidos',component:HomeComponent, data: {status: 'lidos'}},
+  {path:'home/Não Lidos',component:HomeComponent, data : {status: 'nao-lidos'}},
+  {path:'home/Todos',component:HomeComponent, data : {status: 'todos'}},
   {path:'sobre',component:AboutComponent}
 ]
 
