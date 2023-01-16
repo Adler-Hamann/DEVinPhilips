@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Action } from 'rxjs/internal/scheduler/Action';
 import { conteudo } from '../mocks/notificacoes'
 
 @Component({
@@ -8,4 +9,7 @@ import { conteudo } from '../mocks/notificacoes'
 })
 export class NotificationListComponent {
   notificacoes = conteudo
-}
+
+  action(event: string){
+    }
+  }
