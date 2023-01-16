@@ -12,6 +12,7 @@ export class FiltroComponent implements OnInit {
    'Lidos'
 ]
 
+
   @Output() actionOutput:EventEmitter<string> = new EventEmitter();
 
   executarFuncao(titulo: string) {

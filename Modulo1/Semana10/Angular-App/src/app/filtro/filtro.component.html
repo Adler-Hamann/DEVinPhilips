@@ -1,1 +1,1 @@
-<a (click)='executarFuncao(botao)' type="button" *ngFor="let botao of botoes" class="btn btn-outline-secondary">{{botao}}</a>
+<a (click)='executarFuncao(botao)' type="button" *ngFor="let botao of botoes" routerLink="/home/{{botao}}" class="btn btn-outline-secondary">{{botao}}</a>
