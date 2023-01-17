@@ -24,6 +24,9 @@
   <h2 *ngSwitchCase="'Preço'">Estou na página de Preços</h2>
   <h2 *ngSwitchCase="'Informações'">Estou na página de Informações</h2>
 </div>
-
-
 <h1> {{'para entender pipes!' | captalizePhilips}}</h1>
+
+<div *ngFor="let Fotos of arrayFotos">
+  <img [src]="Fotos.url" height="320" width="280">
+  <p>{{Fotos.description}}</p>
+</div>
