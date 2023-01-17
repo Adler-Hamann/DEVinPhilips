@@ -1,0 +1,16 @@
+<p>revisao works!</p>
+<div>
+    <input type="text" [(ngModel)]="entrada">
+    <button (click)="conteudo.push(entrada)" class="btn btn-success">Adicionar</button>
+    <button (click)='conteudo = []' class="btn btn-danger">Apagar Tudo</button>
+</div>
+<div *ngIf="conteudo.length > 0; else templateElse">
+    <ul *ngFor="let unidade of conteudo">
+        <li>
+            <p>{{unidade}}</p>
+        </li>
+    </ul>
+</div>
+<ng-template #templateElse>
+    <p>Adicione uma tarefa!</p>
+</ng-template>
