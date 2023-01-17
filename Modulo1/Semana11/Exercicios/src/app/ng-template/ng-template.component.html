@@ -1,0 +1,10 @@
+<p>ng-template works!</p>
+<div>
+    <input [(ngModel)]="entrada" type="text">
+</div>
+<div *ngIf="entrada == 'input'; else templateElse">
+    <p class="text-success">Esta é a entrada correta!</p>
+</div>
+<ng-template #templateElse>
+    <p class="text-danger">Sua entrada está incorreta... por enquanto!</p>
+</ng-template>
