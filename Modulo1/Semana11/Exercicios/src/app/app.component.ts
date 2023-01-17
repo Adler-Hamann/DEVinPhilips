@@ -30,4 +30,6 @@ export class AppComponent {
       description:"Capa frontal do jogo Monster Hunter World: Iceborne"
     }
   ]
+
+  
 }
