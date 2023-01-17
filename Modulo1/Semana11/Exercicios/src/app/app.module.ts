@@ -8,6 +8,7 @@ import { NgifComponent } from './ngif/ngif.component';
 import { NgContentComponent } from './ng-content/ng-content.component';
 import { NgTemplateComponent } from './ng-template/ng-template.component';
 import { FormsModule } from '@angular/forms';
+import { RevisaoComponent } from './revisao/revisao.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { FormsModule } from '@angular/forms';
     CaptalizePhilipsPipe,
     NgifComponent,
     NgContentComponent,
-    NgTemplateComponent
+    NgTemplateComponent,
+    RevisaoComponent
   ],
   imports: [
     BrowserModule,
